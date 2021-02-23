@@ -1,5 +1,4 @@
-/*
-5. When you exercise to strengthen your heart, you 
+/*5. When you exercise to strengthen your heart, you 
 should maintain your heart rate within a range. To find that 
 range, subtract your age from 220. This difference is your maximum 
 heart rate per minute. Your heart simply will not beat faster than this 
@@ -8,7 +7,7 @@ your heart rate between 65% and 85% of your heart’s maximum. Write a JavaScrip
 program that asks for a person’s age and computes and outputs the slowest 
 and fastest rates necessary to strengthen his heart.*/ 
 let prompt=require('prompt-sync')();
-let n =prompt('enter your age:' );
+let n =prompt('enter your age:');
 let age=parseInt(n);
 let computeAge=220-age;
 let heartRateMax=(computeAge*0.85).toFixed(2);
