@@ -12,11 +12,11 @@ if(user_input==="F"){
 }
 else if(user_input==="S"){
     if(numOfBookOverdue===0)
-    console.log("loan duration in week is: "+12)
+     console.log("loan duration in week is: "+12)
   else if(numOfBookOverdue<3)
     console.log("loan duration in week is: "+10)
   else
-   console.log("loan duration in week is: "+8)
+    console.log("loan duration in week is: "+8)
 }
 else if(user_input==="P"){
     if(numOfBookOverdue===0)
