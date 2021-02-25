@@ -6,7 +6,7 @@ for(let i=1;i<n;i++){
     for(let j=i;j<n;j++){
         k+=i;
     }
-    console.log(k)
+    console.log(k)      
 }
 console.log("======================")
 for(let i=1;i<n;i++){
