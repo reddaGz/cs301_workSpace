@@ -1,6 +1,6 @@
 
 let prompt=require('prompt-sync')();
-let n=+prompt("enter number 2:")
+let n=+prompt("enter number of patterns to print:")
 for(let i=1;i<n;i++){
     let k='';
     for(let j=i;j<n;j++){
