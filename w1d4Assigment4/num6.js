@@ -31,7 +31,6 @@ for(let i=n;i>0;i--){
         k+=i;
     }
     console.log(k)
-
 }
 
-console.log(parseInt(123/10) )
+console.log(null==false)

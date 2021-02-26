@@ -16,7 +16,8 @@ while (i < count) {
     message = "Correct, welcome back.";
     break;
   }
-  if (user_guess !== "123g") user_guess = prompt("Incorrect, try again: ");
+  if (user_guess !== "123g") 
+  user_guess = prompt("Incorrect, try again: ");
   i++;
 }
 if (i === 3) message = "Sorry but you have been locked out.";
