@@ -9,9 +9,10 @@ let prompt = require("prompt-sync")();
 const pi=3.14
 let radius=+prompt("Enter radius of the cylinder")
 let height=+prompt("Enter height of cylinder:")
-console.log(volumeOfCylinder(height))
-function volumeOfCylinder(h){
-    let baseArea=areaOfCircle(radius)
+volumeOfCylinder(radius,height)
+console.log(result);
+function volumeOfCylinder(r,h){
+    let baseArea=areaOfCircle(r)
     let volume =baseArea*h;
     return volume;
 }
