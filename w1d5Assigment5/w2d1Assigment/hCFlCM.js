@@ -37,6 +37,7 @@ function hCF(n, m) {
   }
   return m;
 }
+console.log(typeof hCF)
 /**
  * 
  * @param {number} n ;
