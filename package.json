@@ -1,0 +1,28 @@
+{
+  "name": "cs301_workSpace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-devansvd": "^0.4.0",
+    "jsdoc": "^3.6.6",
+    "mocha": "^8.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reddaGz/cs301_workSpace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reddaGz/cs301_workSpace/issues"
+  },
+  "homepage": "https://github.com/reddaGz/cs301_workSpace#readme"
+}

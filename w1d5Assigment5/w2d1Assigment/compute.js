@@ -1,6 +1,10 @@
-
-/*Write compute function as a function expression.
-*/ 
+/**
+ * 
+ * @param {object} add 
+ * @param {number} x 
+ * @param {number} y 
+ * @return {number} 
+ */
 function compute(add,x,y){
     return add(x,y);
 }

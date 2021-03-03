@@ -1,3 +1,5 @@
+"use strict"
+
 let prompt = require("prompt-sync")();
 let user_input = +prompt("Enter any number to check prime op not: ");
 let count = 0;

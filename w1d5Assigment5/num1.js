@@ -1,7 +1,13 @@
-
+"use strict"
 let prompt = require("prompt-sync")();
-let user_input = +prompt("Enter any number to check prime op not: ");
-console.log(checkPrime(user_input))
+let userInput = +prompt("Enter any number to check prime op not: ");
+console.log(checkPrime(userInput))
+/**
+ * 
+ * @param {number} num  is the input parametre
+ * @param{}
+ * @return{bollean} this is the return values
+ */
 function checkPrime(num) {
   if (num == 2) return true;
   let i;
