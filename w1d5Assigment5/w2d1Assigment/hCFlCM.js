@@ -40,6 +40,7 @@ return n * m;//3*15;
 //LCM using hCF
 
 function lCM(n,m){
-    return (n*m)/hCF(n,m)
+    return (
+        (n*m)/hCF(n,m))
 }
 console.log(`LCM ${num1} and ${num2} using gcd is : `+lCM(num1,num2))
