@@ -30,7 +30,7 @@ if (m > n) {
     m = n; //m=5
     n = temp; //n=9
 }
-for (let i = n ; i < n * m; i += m) {
+for (let i = n ; i < n * m; i += n) {
     //n=9,m=5,i=10
     if (i % n == 0 && i % m == 0) return i;
 }
