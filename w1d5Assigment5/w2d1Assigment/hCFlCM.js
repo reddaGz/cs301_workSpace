@@ -6,21 +6,22 @@ let result = hCFlCM(num1, num2);
 console.log(result);
 /**
  * 
- * @param {*} n 
- * @param {*} m 
+ * @param {number} n ;
+ * @param {number} m ;
+ * @return{String};
  */
 function hCFlCM(n, m) {
   return (
-    `HCF of  ${n} and ${m} is : ` +
-    hCF(n, m) +
-    ` and their LCM is : ` +
+    "HCF of"+ n+"and" +m +"is :" +hCF(n, m) +
+     "and their LCM is :" +
     lcm(n, m)
   );
 }
 /**
  * 
- * @param {*} n 
- * @param {*} m 
+ * @param {number} n ;
+ * @param {number} m ;
+ * @return{number};
  */
 function hCF(n, m) {
   if (n === m) return n;
@@ -36,9 +37,13 @@ function hCF(n, m) {
   }
   return m;
 }
-
-function lcm(n, m) {
-  //Least common multiples //n=5,m=9
+/**
+ * 
+ * @param {number} n ;
+ * @param {number} m ;
+ * @return{number} ;
+ */
+function lcm(n, m) {//lcm of two number
   if (n === m) return n;
   if (m > n) {
     //9>5 true
@@ -52,10 +57,13 @@ function lcm(n, m) {
   }
   return n * m; //3*15;
 }
-
-//LCM using hCF
-
+/**
+ * 
+ * @param {number} n ;
+ * @param {number} m ;
+ * @returns{number};
+ */
 function lCM(n, m) {
   return (n * m) / hCF(n, m);
 }
-console.log(`LCM ${num1} and ${num2} using gcd is : ` + lCM(num1, num2));
+//console.log(`LCM ${num1} and ${num2} using gcd is : ` + lCM(num1, num2));
