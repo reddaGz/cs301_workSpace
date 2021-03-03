@@ -30,9 +30,16 @@ if (m > n) {
     m = n; //m=5
     n = temp; //n=9
 }
-for (let i = n + 1; i < n * m; i += m) {
+for (let i = n ; i < n * m; i += m) {
     //n=9,m=5,i=10
     if (i % n == 0 && i % m == 0) return i;
 }
-return n * m;
+return n * m;//3*15;
 }
+
+//LCM using hCF
+
+function lCM(n,m){
+    return (n*m)/hCF(n,m)
+}
+console.log(`LCM ${num1} and ${num2} using gcd is : `+lCM(num1,num2))
