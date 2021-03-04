@@ -1,3 +1,4 @@
+"use strict";
 let prompt=require('prompt-sync')();
 let user_input=prompt('enter the cost of the house: ')
 let cost=parseFloat(user_input);

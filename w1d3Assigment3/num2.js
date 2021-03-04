@@ -6,6 +6,7 @@ a. "Freshman" if 0<credits<30
 b. "Sophomore" if 30<=credits<60 c. "Junior" if 60<=credits<90
 d. "Senior" if credits>90
  */
+"use strict";
 let prompt=require('prompt-sync')();
 let name=prompt('enter the name of student: ' );
 let user_input=prompt('enter  number of completed credits: ')

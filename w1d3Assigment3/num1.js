@@ -7,19 +7,20 @@
  *  output “sneakers”
  * 
  */
-let prompt=require('prompt-sync')();
-let weather=prompt('enter the weather condition: ');
+"use strict";
+let prompt=require("prompt-sync")();
+let weather=prompt("enter the weather condition: ");
 switch(weather) {
   case "hot":
-    console.log('The footwear is sandals');
+    console.log("The footwear is sandals");
     break;
   case "rain":
-    console.log('The footwear is galoshes');
+    console.log("The footwear is galoshes");
     break;
   case "snow":
-    console.log('The footwear is boots');
+    console.log("The footwear is boots");
     break;
   default:
-    console.log('The footwear is sneakers');
+    console.log("The footwear is sneakers");
     break;
 }
