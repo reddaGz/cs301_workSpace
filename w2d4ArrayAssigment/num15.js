@@ -7,13 +7,12 @@
  * @return{string} return in matrix format;
  */
 function addMatrix(arr1,arr2){
-    let result="";
+    let result=[[],[]];
     for(let i=0;i<arr1.length;i++){
         for(let j=0;j<arr1[i].length;j++){
             let n=arr1[i][j]+arr2[i][j];
-            result+=n+"\t";
-        } 
-        result+="\n";    
+            result[i][j]=n;
+        }     
     }
 return result;
 }
