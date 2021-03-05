@@ -13,7 +13,6 @@ function rotateLeft1(arr){
     arr[arr.length-1]=firstValue;
     return arr;
 }
-  
 
 let arr=[1,2,3,4,5];
 console.log(rotateLeft1(arr));

@@ -71,7 +71,7 @@ let arr1=[];
  return arr;
 }
 /**
- * This function implements to rotate right n times
+ * This function implements to rotate left n times
  * @param {Object} arr ;
  * @param{number}n;
  * @return{Object};

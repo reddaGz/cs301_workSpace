@@ -5,7 +5,7 @@
  * @param {Object} arr Given array
  * @return{Object} return rotated array
  */
-function rotateRight1(arr){
+function rotateRight(arr){
     let lastValue=arr[arr.length-1];
  for(let i=arr.length-1;i>0;i--){
     arr[i]=arr[i-1];
