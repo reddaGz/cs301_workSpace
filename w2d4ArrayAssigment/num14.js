@@ -6,7 +6,7 @@
  * @param {array} arr input array of string;
  * @return{array} return palindrom only;
  */
-function palindromString(arr) {
+function filterPalindromes(arr) {
   let array = [];
   for (let i = 0; i < arr.length; i++) {
     if (isPalindrom(arr[i])) array.push(arr[i]);
