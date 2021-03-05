@@ -78,7 +78,7 @@ describe("filterRange", function () {
 describe("filterPalindromes", function () {
     it("tests [not, a, kayak, eagle, racecar]", function () {
         assert.strictDeepEqual(
-            arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]), ["a", "kayak", "racecar"]);
+            arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]), [ 'a', 'kayak', 'racecar' ]);
     });
 });
 
@@ -90,6 +90,7 @@ describe("reverse2String", function () {
             "Fox_Brown_Quick"
         );
     });
+    
 
     it("4_3_2_1", function () {
         assert.strictEqual(arrays.reverse2String([1, 2, 3, 4]), "4_3_2_1");

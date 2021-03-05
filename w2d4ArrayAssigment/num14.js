@@ -26,4 +26,5 @@ function isPalindrom(str) {
   return true;
 }
 let arr = ["hello", "world","mom","madam"];
-console.log(palindromString(arr));
+let arr1=["not", "a", "kayak", "eagle", "racecar"]; //["a", "kayak", "racecar"]
+console.log(filterPalindromes(arr1));

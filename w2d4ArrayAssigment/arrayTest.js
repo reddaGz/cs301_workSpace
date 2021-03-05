@@ -281,4 +281,4 @@ function addMatrix(arr1,arr2){
     }
 return result;
 }
-module.exports = {addend, rotateLeft,getMiddle,filterPalindromes,enhancedIncludes,reveseArray};
+module.exports = {addMatrix,addend, rotateLeft,getMiddle,filterPalindromes,enhancedIncludes,reveseArray};
