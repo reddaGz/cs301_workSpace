@@ -8,10 +8,12 @@
  */
 function mergeArray(arr1, arr2) {
   let array = [];
-  for (let i = 0; i < arr2.length; i++) {
-    arr1.push(arr2.shift());
+  let n = arr1.length + arr2.length;
+  for (let i = 0; i < n; i++) {
+    let smaller = arr1[0] < arr2[0] ? arr1 : arr2;
+    array.push(smaller.shift());
   }
-  return sortArray(arr1);
+  return array;
 }
 /**
  *This function uses to sort array in decending order
@@ -31,7 +33,7 @@ function sortArray(arr) {
   return arr;
 }
 
-let arr = [3, 5, 2];
-let arr2 = [3, 7, 1];
+let arr = [1, 2, 4, 5, 8];
+let arr2 = [3, 5, 6, 8, 11, 34, 56];
 console.log(mergeArray(arr, arr2));
 //console.log(arr)

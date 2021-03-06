@@ -26,3 +26,4 @@ function enhancedIncludes(arr, n) {
 }
 let arr = [2, 4, 3, 3, 3, 2, 5, 3];
 console.log(enhancedIncludes(arr, 6));
+console.log(enhancedIncludes(arr, 3));
