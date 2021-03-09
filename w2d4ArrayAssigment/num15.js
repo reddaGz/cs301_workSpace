@@ -16,6 +16,6 @@ function addMatrix(arr1,arr2){
     }
 return result;
 }
-let arr1=[[0,1,2],[9,8,7],[1,2,3]];
-let arr2=[[6,5,4],[3,4,5],[1,2,3]];
+let arr1=[[0,1,2],[9,8,7]];
+let arr2=[[6,5,4],[3,4,5]];
 console.log(addMatrix(arr1,arr2));
