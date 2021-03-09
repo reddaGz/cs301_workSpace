@@ -16,7 +16,7 @@ function filterPalindromes(arr) {
 /**
  *
  * @param {string} str input string;
- * @return{bollean} return booelan
+ * @return{boolean} return boolean;
  */
 function isPalindrom(str) {
   let j = str.length - 1;
