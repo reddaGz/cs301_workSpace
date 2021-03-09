@@ -15,6 +15,8 @@ let array = [
     name: "abc",
     age: 20,
   },
-  { name: "xyz", age: 10 },
+  { 
+    name: "xyz",
+     age: 10 },
 ];
 console.log(getAverage(array));
