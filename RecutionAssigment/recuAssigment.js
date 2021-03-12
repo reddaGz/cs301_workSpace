@@ -12,12 +12,12 @@ function countDigits(n){
  * @param {String} str;
  * @return {String};
  */
-function reverse(str){
-    if(str.length==0)
-     return "";
-    if(str.length===1)
-    return str;
-       return  str[str.length-1]+reverse(str.substring(0,str.length-1));  
+ function reverse(str){
+  if(str.length==0)
+   return "";
+  if(str.length===1)
+  return str;
+     return  str[str.length-1]+reverse(str.substring(0,str.length-1));  
 }
 /**
  * 

@@ -1,6 +1,5 @@
 "use strict";
 /**
- *
  * @param {Strign} str1 ;
  * @param {Strign} str2;
  * @return{Strign};

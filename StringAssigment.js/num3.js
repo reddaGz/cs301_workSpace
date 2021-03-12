@@ -11,6 +11,5 @@ function checkSpam(str){
   }
   return false;
 }
-
 let text="this is lottery"
 console.log(checkSpam(text))

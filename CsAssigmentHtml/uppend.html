@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppend words</title>
+    <style>
+        #btn{
+            background-color: blue;
+            font-style: italic;
+        }
+    </style>
+   
+  </head>
+  <body>
+     <script>
+      function uppendWord() {
+        let input = document.getElementById("input").value;
+        document.getElementById("textArea").value =
+          document.getElementById("textArea").value + " " + input;
+        document.getElementById("input").value = "";
+   
+      }
+    </script>
+    <p>input <input type="text" id="input" /></p>
+    
+    <p>  output <textarea id="textArea"></textarea></p>
+   
+   
+    <button style="color: brown;" onclick="uppendWord()">Click to add</button>
+  </body>
+</html>
