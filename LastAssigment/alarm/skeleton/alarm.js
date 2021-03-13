@@ -6,7 +6,6 @@ function pageLoad(){
     let btnAlarm= document.getElementById("go");
     let bodyStyel=document.getElementById("bodyPart")
     btnAlarm.onclick=setAlarm; 
-    let myMinCounter;
     let mySecCounter;
     /**
      * 
@@ -23,7 +22,7 @@ function pageLoad(){
                     if(min===0 && sec===0){
                         stopCounter()
                         clear();
-                        bodyStyel.className= "bodyStyle"
+                        bodyStyel.className= "bodyStyle";
                         return;
                     }			
                     else if(sec===0){
@@ -32,7 +31,7 @@ function pageLoad(){
                         sec=Number(document.getElementById("sec").value)
                         document.getElementById("min").value = min;	
                     }
-                    document.getElementById("sec").value = sec
+                    document.getElementById("sec").value = sec;
                     sec--;	
                     }
              }
@@ -49,7 +48,6 @@ function pageLoad(){
       */        
     function stopCounter(){
         clearInterval(mySecCounter);
-        clearInterval(myMinCounter);  
      }
 }
 /**
