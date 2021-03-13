@@ -13,6 +13,10 @@ function pageLoad(){
     function setAlarm(){
          let  min = Number(document.getElementById("min").value); 
           let sec=Number(document.getElementById("sec").value);
+          if(sec>=60){
+             alert("Seconed must be less than 60")
+              location.reload();
+          }
           mySecCounter = setInterval(alarmCounter,1000);
           /**
            * 

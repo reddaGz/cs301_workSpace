@@ -3,7 +3,12 @@ CSE 190 M, Summer 2012, Roy McElmurry
 CSS styles for tip calculator page
 */
 .bodyStyle{
+	margin: 60px 60px 40px 40px;
+	width: 600px;
+	height: 500px;
+	border: 1px solid ;
 	background-color: red;
+	box-shadow: 10px 10px 10px 10px blue;
 }
 body {
 	margin-left: 20%;
@@ -27,7 +32,7 @@ div {
 .alarm{
 	margin: 60px 60px 40px 40px;
 	width: 600px;
-	height: 400px;
+	height: 500px;
 	border: 1px solid ;
 	background-color: rgb(0, 255, 0);
 	box-shadow: 10px 10px 10px 10px blue;
