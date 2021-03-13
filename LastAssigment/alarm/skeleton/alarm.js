@@ -4,15 +4,15 @@
  */
 function pageLoad(){
     let btnAlarm= document.getElementById("go");
-    let bodyStyel=document.getElementById("bodyPart")
+    let bodyStyle=document.getElementById("bodyPart");
     btnAlarm.onclick=setAlarm; 
     let mySecCounter;
     /**
      * 
      */
     function setAlarm(){
-         let  min = Number(document.getElementById("min").value) 
-          let sec=Number(document.getElementById("sec").value)
+         let  min = Number(document.getElementById("min").value); 
+          let sec=Number(document.getElementById("sec").value);
           mySecCounter = setInterval(alarmCounter,1000);
           /**
            * 
@@ -22,13 +22,13 @@ function pageLoad(){
                     if(min===0 && sec===0){
                         stopCounter()
                         clear();
-                        bodyStyel.className= "bodyStyle";
+                        bodyStyle.className= "bodyStyle";
                         return;
                     }			
                     else if(sec===0){
                         min--;
                         document.getElementById("sec").value = 59;
-                        sec=Number(document.getElementById("sec").value)
+                        sec=Number(document.getElementById("sec").value);
                         document.getElementById("min").value = min;	
                     }
                     document.getElementById("sec").value = sec;
