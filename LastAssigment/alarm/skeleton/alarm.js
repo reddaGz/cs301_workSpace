@@ -20,15 +20,15 @@ function pageLoad(){
            * @return{};
            */
                 function alarmCounter(){
-                    if(min===0 && sec===50){
+                    if(min===0 && sec===0){
                         stopCounter()
                         clear();
                         bodyStyel.className= "bodyStyle"
                         return;
                     }			
-                    else if(sec===50){
+                    else if(sec===0){
                         min--;
-                        document.getElementById("sec").value = 53;
+                        document.getElementById("sec").value = 59;
                         sec=Number(document.getElementById("sec").value)
                         document.getElementById("min").value = min;	
                     }
