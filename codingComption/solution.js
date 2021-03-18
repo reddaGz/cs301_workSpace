@@ -1,9 +1,26 @@
 "use strict"
+/**
+ * @author Gebreegziabher Redda;
+ * @param {arr} arr;
+ *  * @param {Number} n;
+ * @returns {Number} 
+ */
 function divisibleSumPairs(arr, n){
-
-
+    let countPair=0
+for(let i=0;i<arr.length;i++){
+    for(let j=i;j<arr.length;j++){
+        if(arr[i]+arr[j]%k===0){
+            countPair++
+        }   
+    }
+    return countPair;
 }
-
+}
+/**
+ * @author Daniel Haile
+ * @param {Array} arr user input array 
+ * @returns {number} returns the most frequented sight
+ */
 function mostFrequentSight(arr){
     let count = 0;
     let mostVisited = arr[0];
@@ -26,6 +43,11 @@ function countElement(arr, n) {
   }
   return count;
 }
+ /**
+ * @author luwam Asmelash;
+ * @param {arr} arr;
+ * @returns {number} finding the minimum distance;
+ */
 function countSockPair(arr) {
     let counter = 0;
     let count = 0;
@@ -54,7 +76,11 @@ function countSockPair(arr) {
       }
       return height;
   }
-
+ /**
+ * @author Gebreegziabher Redda;
+ * @param {arr} arr;
+ * @returns {array} 
+ */
   function computeCharges(arr){
       let customer=[]
       for(let i=0;i<charges.length;i++){
@@ -82,6 +108,31 @@ function countSockPair(arr) {
            max=arr[i]
       }
       return max;
+  }
+
+  /**
+ * @author luwam Asmelash;
+ * @param {arr} arr;
+ * @returns {number} finding the minimum distance;
+ */
+function findMinDistance(arr) {
+    let distances = [];
+    for(let i = 0; i<arr.length; i++){
+        if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])){
+        let minDistance = arr.lastIndexOf(arr[i]) - arr.indexOf(a[i]);
+            distances.push(minDistance);
+        }
+    }
+   
+    if(distances.length === 0){
+        return -1;
+    }else{
+        distances.sort(function(aaa, bbb) {
+          return aaa - bbb;
+        });
+    
+        return distances[0];
+    }
   }
 
   
