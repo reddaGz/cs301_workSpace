@@ -1,21 +1,23 @@
 "use strict"
-/**
+ /**
  * @author Gebreegziabher Redda;
  * @param {arr} arr;
- *  * @param {Number} n;
- * @returns {Number} 
+ * @returns {number} 
  */
-function divisibleSumPairs(arr, n){
-    let countPair=0
+function divisibleSumPairs(arr, k){
+let countPair=0
 for(let i=0;i<arr.length;i++){
-    for(let j=i;j<arr.length;j++){
-        if(arr[i]+arr[j]%k===0){
-            countPair++
+    for(let j=i+1;j<arr.length;j++){
+        if((arr[i]+arr[j])%k===0){
+            countPair+=1
         }   
-    }
-    return countPair;
+    }  
 }
+return countPair;
 }
+let arr=[1,3,2,6,1,2] ;
+let k=3
+console.log(divisibleSumPairs(arr,k))
 /**
  * @author Daniel Haile
  * @param {Array} arr user input array 
@@ -43,12 +45,15 @@ function countElement(arr, n) {
   }
   return count;
 }
+let arr1=[1,4,4,4,5,3] 
+console.log(mostFrequentSight(arr1))
+
  /**
  * @author luwam Asmelash;
  * @param {arr} arr;
- * @returns {number} finding the minimum distance;
+ * @returns {number} 
  */
-function countSockPair(arr) {
+function countSocksPairs(arr) {
     let counter = 0;
     let count = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -66,9 +71,10 @@ function countSockPair(arr) {
     return counter;
   }
 
+
   function computeHeight(height, cycles){
       height=height;
-      for(let i=1;i<cycles;i++){
+      for(let i=1;i<=cycles;i++){
            if(i%2!==0)
             height=2*height;
             else
@@ -76,14 +82,12 @@ function countSockPair(arr) {
       }
       return height;
   }
- /**
- * @author Gebreegziabher Redda;
- * @param {arr} arr;
- * @returns {array} 
- */
+  console.log(computeHeight(1,4))
+ 
+
   function computeCharges(arr){
       let customer=[]
-      for(let i=0;i<charges.length;i++){
+      for(let i=0;i<arr.length;i++){
          let compute={};
           compute.custId=arr[i].custId;
           let aveg=finedAverage(arr[i].charges)
@@ -109,7 +113,8 @@ function countSockPair(arr) {
       }
       return max;
   }
-
+  const charges = [{custId: 1,charges:[5,7,3]}, {custId: 2, charges: [20,60,50,30]}]
+  console.log(computeCharges(charges))
   /**
  * @author luwam Asmelash;
  * @param {arr} arr;
@@ -134,6 +139,7 @@ function findMinDistance(arr) {
         return distances[0];
     }
   }
+  module.exports={divisibleSumPairs,computeCharges,computeHeight,findMinDistance,mostFrequentSight,countSocksPairs}
 
   
  
